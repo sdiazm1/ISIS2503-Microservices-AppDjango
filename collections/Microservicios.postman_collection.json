@@ -249,6 +249,110 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Places",
+			"item": [
+				{
+					"name": "Create Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": 25,\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://35.184.73.175:8080/placecreate/",
+							"protocol": "http",
+							"host": [
+								"35",
+								"193",
+								"151",
+								"156"
+							],
+							"port": "8080",
+							"path": [
+								"placecreate",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Places",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": 25,\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://35.184.73.175:8080/places/",
+							"protocol": "http",
+							"host": [
+								"35",
+								"193",
+								"151",
+								"156"
+							],
+							"port": "8080",
+							"path": [
+								"places",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create many places",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": 25,\r\n },\r\n    {\r\n        \"name\": 25,\r\n }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://35.184.73.175:8080/createplaces/",
+							"protocol": "http",
+							"host": [
+								"35",
+								"193",
+								"151",
+								"156"
+							],
+							"port": "8080",
+							"path": [
+								"createplaces",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
